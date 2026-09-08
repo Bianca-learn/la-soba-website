@@ -6,6 +6,196 @@
     <title>Menu</title>
 </head>
 <body>
-    
+   
+    <header>
+      <a href="index.html" class="brand">
+        <img src="./Visuals/Logo.png" alt="logo with woodstove"/>
+        <span>La Sobă</span>
+      </a>
+      <button type="button" aria-label="Open navigation" aria-controls="main-navigation" aria-expanded="false">☰
+      </button>
+
+      <nav id="main-navigation">
+        <p>Navigation</p>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Visit-Parking.html">Visit & Parking</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="menu">
+            <div class="menu-controls">
+                <div class="filter-control">
+                    <button type="button" aria-controls="filters-popup" aria-expanded="false">
+                     Filter
+                    </button>
+
+                    <div id="filters-popup" class="filter-popup" hidden>
+                        <form class="filter-form">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="coffee">
+                                        Coffee
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="tea-decaf">
+                                        Tea/Decaf Coffee
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="lemonade-fresh">
+                                        Lemonade/Fresh
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="lactose-free">
+                                        Lactose-free
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="water-juice">
+                                        Water/Juice
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="food">
+                                        Food
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="vegan">
+                                        Vegan
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="sweets">
+                                        Sweets
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="filters" value="kids-friendly">
+                                        Kids friendly
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <div class="filter-actions">
+                                <button type="reset">Clear all</button> 
+                                <button type="button">Cancel</button> 
+                                <button type="submit">Done</button> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="sort-control">
+                    <button type="button" aria-controls="sort-popup" aria-expanded="false">
+                     Sort by
+                    </button>
+
+                    <div id="sort-popup" class="sort-popup" hidden>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="sort" value="new">
+                                    New
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="sort" value="most-ordered">
+                                    Most Ordered
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="sort" value="price-low-high">
+                                    Price: Low to High
+                                </label>                            
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="sort" value="price-high-low">
+                                    Price: High to Low
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="sort" value="name-a-z">
+                                    Name: A-Z
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="menu-items">
+                <li data-category="coffee" data-tags="lactose-free vegan" data-price="7" data-added="2026-09-01" data-orders="50">
+                    <img src="./Visuals/menu-items/espresso.png" alt="">
+                    <span class="item-name">Espresso</span>
+                </li>
+                <li data-category="coffee" data-price="14" data-added="2026-09-01" data-orders="87">
+                    <img src="./Visuals/menu-items/caffee latte.png" alt="">
+                    <span class="item-name">Caffe latte</span>
+                </li>
+                <li data-category="tea-decaf" data-tags="lactose-free vegan" data-price="7" data-added="2026-09-03" data-orders="34">
+                    <img src="./Visuals/menu-items/decaf-coffee.jpg" alt="">
+                    <span class="item-name">Decaf Coffee</span>
+                </li>
+                <li data-category="tea-decaf" data-tags="lactose-free vegan" data-price="8" data-added="2026-09-02" data-orders="44">
+                    <img src="./Visuals/menu-items/green-tea.png" alt="">
+                    <span class="item-name">Green Tea</span>
+                </li>
+                <li data-category="tea-decaf" data-tags="lactose-free vegan" data-price="8" data-added="2026-09-02" data-orders="28">
+                    <img src="./Visuals/menu-items/herbal-tea.png" alt="">
+                    <span class="item-name">Herbal Tea</span>
+                </li>
+                <li data-category="lemonade-fresh" data-tags="lactose-free vegan kids-friendly" data-price="15" data-added="2026-09-03" data-orders="66">
+                    <img src="./Visuals/menu-items/lemonade.png" alt="">
+                    <span class="item-name">Lemonade</span>
+                </li>
+                <li data-category="lemonade-fresh" data-tags="lactose-free vegan kids-friendly" data-price="13" data-added="2026-09-04" data-orders="52">
+                    <img src="./Visuals/menu-items/fresh.png" alt="">
+                    <span class="item-name">Fresh</span>
+                </li>
+                <li data-category="water-juice" data-tags="lactose-free vegan" data-price="8" data-added="2026-09-01" data-orders="83">
+                    <img src="./Visuals/menu-items/water.png" alt="">
+                    <span class="item-name">Water</span>
+                </li>
+                <li data-category="food" data-tags="kids-friendly" data-price="25" data-added="2026-09-01" data-orders="15">
+                    <img src="./Visuals/menu-items/egg-breakfast.png" alt="">
+                    <span class="item-name">Egg breakfast</span>
+                </li>
+                <li data-category="sweets" data-tags="kids-friendly" data-price="14" data-added="2026-09-04" data-orders="22">
+                    <img src="./Visuals/menu-items/sweet-bread.png" alt="">
+                    <span class="item-name">Sweet bread</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+      <a href="contact-us.html">Contact Us</a>
+      <div class="social-links">
+        <a href="https://www.instagram.com/" aria-label="Instagram">
+          <img src="./Visuals/instagram-logo.webp" alt=""/>
+        </a>
+      </div>
+    </footer>
 </body>
 </html>
