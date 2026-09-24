@@ -1,11 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visit & Parking</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit & Parking | La Sobă</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="brand">
+        <img src="./Visuals/Logo.png" alt="logo with woodstove" />
+        <span>La Sobă</span>
+      </a>
+      <button
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav id="main-navigation">
+        <p>Navigation</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="Visit-Parking.html">Visit & Parking</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Visit & Parking</h1>
+
+      <div class="location-map">
+        <iframe
+          title="Map showing the location of La Sobă"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89245.21660791068!2d25.514062568910212!3d45.6525684782401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2zQnJhyJlvdg!5e0!3m2!1sro!2sro!4v1790258179874!5m2!1sro!2sro"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        >
+        </iframe>
+      </div>
+
+      <section class="visit-info">
+        <div class="location">Address:</div>
+        <div class="opening-hours">Hours:</div>
+      </section>
+
+      <section class="parking-status">
+        <p id="parking-spaces">
+          <em>Live parking: 3/10 spots available</em>
+        </p>
+        <div class="parking-meter"></div>
+      </section>
+      <section>
+        <h2>Sneak Peek</h2>
+        <div class="carousel">
+          <button
+            type="button"
+            class="carousel-arrow left"
+            aria-label="Previous image"
+          >
+            &lt;
+          </button>
+          <div class="carousel-images">
+            <img src="./Visuals/interior/Interior.png" alt="Interior La Sobă" />
+            <img
+              src="./Visuals/interior/stove-closeup.png"
+              alt="Stove closeup"
+            />
+            <img
+              src="./Visuals/interior/interior-zona1.png"
+              alt="Common seating area near the stove"
+            />
+            <img
+              src="./Visuals/interior/interior-zona2.png"
+              alt="Seating area with individual seating"
+            />
+            <img
+              src="./Visuals/interior/interior-zona3.png"
+              alt="Quiet seating area"
+            />
+            <img
+              src="./Visuals/interior/zona3-outlets.png"
+              alt="Quiet seating area with docking stations"
+            />
+          </div>
+          <button
+            type="button"
+            class="carousel-arrow right"
+            aria-label="Next image"
+          >
+            &gt;
+          </button>
+        </div>
+      </section>
+      <section class="dropdowns">
+        <details>
+          <summary class="dropdown-summary">Amenities</summary>
+          <div class="dropdown-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              beatae vel rerum quo alias dolores assumenda vitae eaque maxime
+              fugit quos rem dolore nam aliquid laborum, nobis eligendi.
+              Laboriosam, veritatis.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary class="dropdown-summary">Parking Rules</summary>
+          <div class="dropdown-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              eligendi accusantium consequuntur distinctio recusandae optio,
+              quaerat aspernatur rem quibusdam sit.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary class="dropdown-summary">Our story</summary>
+          <div class="dropdown-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates excepturi nemo corporis vel veritatis alias incidunt.
+              Nisi explicabo, rerum, libero similique veritatis quas nemo
+              ducimus non voluptatibus beatae eligendi error?
+            </p>
+          </div>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <a href="contact-us.html">Contact Us</a>
+      <div class="social-links">
+        <a href="https://www.instagram.com/" aria-label="Instagram">
+          <img src="./Visuals/instagram-logo.webp" alt="" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
